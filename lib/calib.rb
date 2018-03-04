@@ -1,5 +1,7 @@
 require "calib/version"
-require 'calib/network'
 
-module Calib
+if defined?(Rails)
+  require 'calib/engine'
+else
+  require 'calib/network'
 end
