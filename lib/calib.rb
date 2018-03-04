@@ -1,5 +1,5 @@
 require "calib/version"
-require 'calib/net'
+require 'calib/network'
 
 module Calib
 end
