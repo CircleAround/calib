@@ -1,10 +1,10 @@
 RSpec.describe Calib::Network::Util do
-  describe 'ip_address?' do
+  describe '.ip_address?' do
     it  { expect(Calib::Network::Util.ip_address? '192.168.0.1').to be true }
     it  { expect(Calib::Network::Util.ip_address? 'test').to be false }
   end
 
-  describe 'url_with_direct_ip_address?' do
+  describe '.url_with_direct_ip_address?' do
     it  { expect(Calib::Network::Util.url_with_direct_ip_address? 'http://127.0.0.1').to be true }
     it  { expect(Calib::Network::Util.url_with_direct_ip_address? 'http://example.com').to be false }
 
